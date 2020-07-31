@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/Yuphee/RewardLayout.svg?color=brightgreen)](https://github.com/Yuphee/RewardLayout/blob/master/LICENSE)
-![GitHub last commit](https://img.shields.io/github/last-commit/Yuphee/RewardLayout.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/Yuphee/CodeCompletion.svg)
 <img src="https://img.shields.io/badge/email-437220638%40qq.com-blue.svg">
 
 ## CodeCompletion
