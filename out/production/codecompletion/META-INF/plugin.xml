@@ -1,0 +1,55 @@
+<idea-plugin>
+  <id>com.yz.android.codecompletion</id>
+  <name>CodeCompletion</name>
+  <version>1.0</version>
+  <vendor email="437220638@qq.com" url="https://github.com/Yuphee">Yuphee</vendor>
+
+  <description><![CDATA[
+      code postfix completion<br>
+      <em>promote develop</em>
+      <b>Available templates:</b><br/><br/>
+      <ul>
+        <li> <b>.pit</b><br/><em>Init presenter</em><br/><b>presenter = new xxPresenterImpl();<br/> presenter.attachView(this);</b></li>
+      </ul>
+      <ul>
+        <li> <b>.timer</b><br/><em>Create rx timer</em><br/><b>Observable.timer(10, TimeUnit.SECONDS)...;</b></li>
+      </ul>
+      <ul>
+        <li> <b>.interval</b><br/><em>Create rx interval</em><br/><b>Observable.interval(0, 1, TimeUnit.SECONDS)...;</b></li>
+      </ul>
+      <ul>
+        <li> <b>.isempty</b><br/><em>Create if is empty str</em><br/><b>if (TextUtils.isEmpty(str)) {<br/>};</b></li>
+      </ul>
+      <ul>
+        <li> <b>.isnotempty</b><br/><em>Create if is not empty str</em><br/><b>if (!TextUtils.isEmpty(str)) {<br/>};</b></li>
+      </ul>
+    ]]>
+  </description>
+
+  <change-notes><![CDATA[
+      custom code completion<br>
+      <em>promote develop</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.modules.java</depends>
+  <depends>org.jetbrains.android</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <codeInsight.template.postfixTemplateProvider language="JAVA"
+                                                  implementationClass="com.yz.android.codecompletion.AndroidPostfixTemplateProvider"/>
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

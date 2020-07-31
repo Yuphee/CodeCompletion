@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="org.easytesting:fest-reflect:1.4.1" type="repository">
+    <properties maven-id="org.easytesting:fest-reflect:1.4.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/fest-reflect-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/fest-util-1.2.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
